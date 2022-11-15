@@ -1,0 +1,21 @@
+<form action="" method="get">
+
+    <input type="text" name="disciplina" id="disciplina">
+
+    <input type="submit" value="Buscar">
+
+</form>
+
+{% if equipo %}
+    <ul>
+   
+        <li>Existe la  disciplina de {{equipo.disciplina}} para la categoria {{equipo.categoria}}</li>
+        
+    
+    </ul>
+{% endif %}
+
+{% if error %}
+    <p> {{error}} </p>
+
+{% endif%}

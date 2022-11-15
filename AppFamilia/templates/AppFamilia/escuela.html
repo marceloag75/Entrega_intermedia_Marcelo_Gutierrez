@@ -1,0 +1,17 @@
+{% load static %}
+
+{% block codigoDinamico %}
+
+
+<form action="" method="post"> {% csrf_token %}
+
+    <h1> Disciplinas y Categorias disponibles </h1>
+
+    <table> 
+        {{formulario.as_table}}
+    </table>
+
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock %}
